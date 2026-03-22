@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>LB Engenharia | PMOC e Climatização</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
 body{
-margin:0;
-font-family: 'Inter', sans-serif;
-background:#0b1c2c;
-color:#fff;
+font-family:'Inter',sans-serif;
+background:#f5f7fa;
+color:#1a1a1a;
 }
 
 header{
@@ -21,8 +21,10 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 60px;
-background:rgba(0,0,0,0.3);
-backdrop-filter: blur(10px);
+background:#0a2540;
+color:#fff;
+position:sticky;
+top:0;
 }
 
 header img{
@@ -33,8 +35,122 @@ nav a{
 margin-left:30px;
 color:#fff;
 text-decoration:none;
-font-weight:500;
+cursor:pointer;
 }
+
+.hero{
+padding:100px 60px;
+background:linear-gradient(135deg,#0a2540,#1f4e79);
+color:#fff;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:600px;
+color:#dbeafe;
+margin-bottom:30px;
+}
+
+.btn{
+background:#f4c542;
+padding:15px 25px;
+border-radius:6px;
+text-decoration:none;
+color:#000;
+font-weight:600;
+}
+
+.section{
+padding:80px 60px;
+max-width:1200px;
+margin:auto;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:25px;
+border-radius:8px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contact{
+background:#0a2540;
+color:#fff;
+padding:60px;
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#081a2c;
+color:#fff;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.png">
+<nav>
+<a onclick="scrollToSection('empresa')">Empresa</a>
+<a onclick="scrollToSection('servicos')">Serviços</a>
+<a onclick="scrollToSection('contato')">Contato</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Engenharia Mecânica Especializada em PMOC</h1>
+<p>Conformidade legal, eficiência e qualidade do ar para sua empresa.</p>
+<a href="#contato" class="btn">Solicitar contato</a>
+</section>
+
+<section class="section" id="empresa">
+<h2>Sobre a empresa</h2>
+<p>Atuação técnica especializada em sistemas de climatização e PMOC.</p>
+</section>
+
+<section class="section" id="servicos">
+<h2>Serviços</h2>
+
+<div class="grid">
+<div class="card"><h3>PMOC</h3></div>
+<div class="card"><h3>Preventiva</h3></div>
+<div class="card"><h3>Corretiva</h3></div>
+<div class="card"><h3>ART</h3></div>
+</div>
+
+</section>
+
+<section class="contact" id="contato">
+<h2>Contato</h2>
+<p>📞 (21) 96695-1691</p>
+<p>✉ comercial@lb.srv.br</p>
+</section>
+
+<footer>
+© LB Engenharia
+</footer>
+
+<script>
+function scrollToSection(id){
+document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>}
 
 .hero{
 padding:120px 60px;
