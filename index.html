@@ -6,65 +6,91 @@
 
 <title>LB Engenharia | PMOC, Climatização e Engenharia Mecânica</title>
 
-<meta name="description" content="Suporte técnico em sistemas de climatização, PMOC e conformidade com a Lei 13.589/2018. Engenharia mecânica aplicada à eficiência operacional e qualidade do ar.">
-
 <style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
 body{
 font-family: Arial, Helvetica, sans-serif;
-margin:0;
 background:#f4f6f9;
 color:#1a1a1a;
-line-height:1.6;
 }
 
 header{
 background:#0a2540;
-color:#fff;
-padding:20px 50px;
+padding:20px 60px;
 display:flex;
-align-items:center;
 justify-content:space-between;
+align-items:center;
 }
 
 header img{
 height:55px;
-filter: brightness(1.2) contrast(1.1);
+background:#fff;
+padding:5px;
+border-radius:6px;
 }
 
 nav a{
 color:#fff;
-margin-left:25px;
+margin-left:30px;
 text-decoration:none;
 font-weight:600;
-font-size:14px;
-letter-spacing:0.5px;
+padding-bottom:5px;
+border-bottom:2px solid transparent;
+transition:0.3s;
+}
+
+nav a:hover{
+border-bottom:2px solid #f4c542;
+color:#f4c542;
 }
 
 .hero{
-padding:90px 50px;
+padding:100px 60px;
 background:linear-gradient(135deg,#0a2540,#1c3d5a);
 color:#fff;
 }
 
 .hero h1{
-font-size:42px;
-max-width:750px;
+font-size:44px;
+max-width:800px;
 margin-bottom:20px;
 }
 
 .hero p{
-max-width:600px;
 font-size:18px;
+max-width:600px;
 color:#cbd5e1;
+margin-bottom:25px;
 }
 
-.container{
-padding:70px 50px;
+.hero ul{
+margin-top:20px;
+line-height:1.8;
+}
+
+.hero li{
+margin-bottom:8px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+background:#f4c542;
+color:#000;
+padding:15px 30px;
+font-weight:bold;
+border-radius:6px;
+text-decoration:none;
+}
+
+.section{
+padding:80px 60px;
 max-width:1200px;
 margin:auto;
 }
 
-.section-title{
+.section h2{
 font-size:30px;
 margin-bottom:25px;
 }
@@ -80,6 +106,7 @@ background:#fff;
 padding:30px;
 border-radius:8px;
 box-shadow:0 6px 18px rgba(0,0,0,0.08);
+border-top:4px solid #f4c542;
 }
 
 .card h3{
@@ -96,15 +123,15 @@ margin-bottom:15px;
 .contact{
 background:#0a2540;
 color:#fff;
-padding:60px 50px;
+padding:60px;
+text-align:center;
 }
 
 footer{
-text-align:center;
-padding:20px;
 background:#081a2c;
 color:#fff;
-font-size:14px;
+text-align:center;
+padding:20px;
 }
 </style>
 </head>
@@ -113,101 +140,110 @@ font-size:14px;
 
 <header>
 <div style="display:flex;align-items:center;gap:15px;">
-<img src="./logo.png" alt="LB Engenharia">
-<strong style="font-size:18px;">LB Engenharia</strong>
+<img src="./logo.png">
+<strong style="color:white;">LB Engenharia</strong>
 </div>
 
 <nav>
-<a href="#empresa">EMPRESA</a>
-<a href="#servicos">SERVIÇOS</a>
-<a href="#legislacao">CONFORMIDADE</a>
-<a href="#contato">CONTATO</a>
+<a href="#empresa">Empresa</a>
+<a href="#servicos">Serviços</a>
+<a href="#legislacao">Conformidade</a>
+<a href="#contato">Contato</a>
 </nav>
 </header>
 
 <section class="hero">
-<h1>Gestão Técnica de Sistemas de Climatização e PMOC</h1>
-<p>
-Atuação especializada no suporte técnico a empresas, garantindo conformidade com a legislação vigente,
-eficiência operacional dos sistemas e controle da qualidade do ar interior.
-</p>
-</section>
 
-<section class="container" id="empresa">
-<h2 class="section-title">Sobre a LB Engenharia</h2>
+<h1>Reduza custos operacionais e aumente a vida útil dos seus sistemas de climatização</h1>
 
 <p>
-A LB Engenharia atua no suporte técnico a empresas dos setores comercial, industrial e corporativo,
-com foco na gestão de sistemas de climatização e no atendimento às exigências legais relacionadas ao PMOC.
+A LB Engenharia atua na gestão técnica de sistemas HVAC, garantindo eficiência energética,
+confiabilidade operacional e conformidade com a legislação vigente (PMOC).
 </p>
 
-<p>
-Nosso trabalho é orientado à confiabilidade operacional, redução de riscos e melhoria do desempenho dos sistemas,
-sempre alinhado às normas técnicas e regulamentações vigentes.
-</p>
+<ul>
+<li>✔ Redução do consumo de energia</li>
+<li>✔ Aumento da vida útil dos equipamentos</li>
+<li>✔ Prevenção de falhas e paradas</li>
+<li>✔ Evite multas e riscos legais</li>
+</ul>
+
+<a href="#contato" class="btn">Solicitar avaliação técnica</a>
 
 </section>
 
-<section class="container" id="servicos">
-<h2 class="section-title">Serviços Técnicos</h2>
+<section class="section" id="empresa">
+<h2>Sobre a empresa</h2>
+
+<p>
+A LB Engenharia oferece suporte técnico especializado na gestão de sistemas de climatização,
+atuando na prevenção de falhas, redução de custos operacionais e adequação às exigências legais.
+</p>
+
+<p>
+Nosso foco é garantir desempenho, segurança e confiabilidade dos sistemas, com atuação técnica orientada por normas e boas práticas da engenharia mecânica.
+</p>
+
+</section>
+
+<section class="section" id="servicos">
+<h2>Serviços técnicos</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>Plano de Manutenção (PMOC)</h3>
-<p>Elaboração e implementação conforme a Lei Federal 13.589/2018.</p>
+<h3>PMOC</h3>
+<p>Elaboração e gestão conforme a Lei 13.589/2018, garantindo conformidade legal.</p>
 </div>
 
 <div class="card">
 <h3>Manutenção Preventiva</h3>
-<p>Rotinas de inspeção e controle para garantir desempenho e segurança.</p>
+<p>Redução de falhas e aumento da vida útil dos equipamentos.</p>
 </div>
 
 <div class="card">
 <h3>Manutenção Corretiva</h3>
-<p>Atendimento técnico para clientes com contrato ativo.</p>
+<p>Atendimento técnico para rápida normalização do sistema.</p>
 </div>
 
 <div class="card">
 <h3>Responsabilidade Técnica</h3>
-<p>Emissão de ART e acompanhamento técnico especializado.</p>
+<p>Engenheiro responsável, ART e acompanhamento técnico contínuo.</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="container" id="legislacao">
-<h2 class="section-title">Conformidade Legal</h2>
+<section class="section" id="legislacao">
+<h2>Conformidade legal</h2>
 
 <div class="law">
 <strong>Lei Federal 13.589/2018</strong>
-<p>Obrigatoriedade da implementação do PMOC em sistemas de climatização.</p>
+<p>Obrigatoriedade do PMOC em sistemas de climatização.</p>
 </div>
 
 <div class="law">
-<strong>Portaria 3.523 do Ministério da Saúde</strong>
-<p>Diretrizes para manutenção e controle dos sistemas.</p>
+<strong>Portaria 3.523</strong>
+<p>Diretrizes para manutenção e controle.</p>
 </div>
 
 <div class="law">
-<strong>Normas da ANVISA</strong>
-<p>Parâmetros de qualidade do ar em ambientes climatizados.</p>
+<strong>ANVISA</strong>
+<p>Controle da qualidade do ar interior.</p>
 </div>
 
 </section>
 
 <section class="contact" id="contato">
 <h2>Contato</h2>
-
 <p><strong>LB Engenharia</strong></p>
 <p>📞 (21) 96695-1691</p>
 <p>✉ comercial@lb.srv.br</p>
-
 </section>
 
 <footer>
-© LB Engenharia — Engenharia Mecânica e Sistemas de Climatização
+© LB Engenharia — Engenharia Mecânica
 </footer>
 
 </body>
