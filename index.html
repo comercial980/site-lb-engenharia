@@ -3,28 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LB Engenharia | PMOC e Climatização</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>LB Engenharia | PMOC e Climatização</title>
+<meta name="description" content="Engenharia mecânica especializada em PMOC, climatização e conformidade com a Lei 13.589/2018.">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-
 body{
-font-family:'Inter',sans-serif;
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
 background:#f5f7fa;
 color:#1a1a1a;
+line-height:1.6;
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
 background:#0a2540;
-color:#fff;
-position:sticky;
-top:0;
+color:white;
+padding:20px 40px;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
 header img{
@@ -32,9 +30,170 @@ height:50px;
 }
 
 nav a{
-margin-left:30px;
-color:#fff;
+color:white;
+margin-left:20px;
 text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+padding:80px 40px;
+background:#102f52;
+color:white;
+}
+
+.hero h1{
+font-size:38px;
+max-width:700px;
+}
+
+.hero p{
+max-width:600px;
+font-size:18px;
+}
+
+.container{
+padding:60px 40px;
+max-width:1200px;
+margin:auto;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.section-title{
+font-size:28px;
+margin-bottom:30px;
+}
+
+.law{
+background:#eef3f8;
+padding:25px;
+border-radius:8px;
+margin-bottom:20px;
+}
+
+.contact{
+background:#0a2540;
+color:white;
+padding:50px 40px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#081a2c;
+color:white;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div style="display:flex;align-items:center;gap:15px;">
+<img src="./logo.png" alt="LB Engenharia">
+<strong>LB Engenharia</strong>
+</div>
+
+<nav>
+<a href="#empresa">Empresa</a>
+<a href="#servicos">Serviços</a>
+<a href="#legislacao">Legislação</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Engenharia Mecânica Especializada em Climatização e PMOC</h1>
+<p>
+A LB Engenharia atua no suporte técnico para empresas que necessitam garantir
+conformidade legal, eficiência energética e qualidade do ar em sistemas de climatização.
+</p>
+</section>
+
+<section class="container" id="empresa">
+<h2 class="section-title">Sobre a LB Engenharia</h2>
+<p>
+Atuamos no suporte técnico para empresas dos setores comercial, industrial e corporativo,
+garantindo segurança operacional e atendimento às exigências legais relacionadas ao PMOC.
+</p>
+</section>
+
+<section class="container" id="servicos">
+<h2 class="section-title">Serviços</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>PMOC</h3>
+<p>Elaboração conforme Lei 13.589/2018.</p>
+</div>
+
+<div class="card">
+<h3>Manutenção Preventiva</h3>
+<p>Inspeção periódica e controle operacional.</p>
+</div>
+
+<div class="card">
+<h3>Manutenção Corretiva</h3>
+<p>Atendimento exclusivo para clientes contratados.</p>
+</div>
+
+<div class="card">
+<h3>Responsabilidade Técnica</h3>
+<p>Emissão de ART e acompanhamento técnico.</p>
+</div>
+
+</div>
+</section>
+
+<section class="container" id="legislacao">
+<h2 class="section-title">Legislação Aplicável</h2>
+
+<div class="law">
+<strong>Lei Federal 13.589/2018</strong>
+<p>Obrigatoriedade do PMOC em sistemas de climatização.</p>
+</div>
+
+<div class="law">
+<strong>Portaria 3.523</strong>
+<p>Diretrizes de manutenção e controle.</p>
+</div>
+
+<div class="law">
+<strong>ANVISA</strong>
+<p>Controle da qualidade do ar interior.</p>
+</div>
+
+</section>
+
+<section class="contact" id="contato">
+<h2>Contato</h2>
+
+<p><strong>LB Engenharia</strong></p>
+<p>📞 (21) 96695-1691</p>
+<p>✉ comercial@lb.srv.br</p>
+
+</section>
+
+<footer>
+© LB Engenharia — Engenharia Mecânica e Gestão de Climatização
+</footer>
+
+</body>
+</html>text-decoration:none;
 cursor:pointer;
 }
 
